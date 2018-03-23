@@ -8,19 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		5207D8C31CCE69B0007DF1E8 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5207D8C21CCE69B0007DF1E8 /* America.gpx */; };
-		5207D8C51CCEB879007DF1E8 /* RegionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207D8C41CCEB879007DF1E8 /* RegionProtocol.swift */; };
-		5207D8C71CCEB985007DF1E8 /* RegionDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207D8C61CCEB985007DF1E8 /* RegionDelegateProtocol.swift */; };
 		525EF2E91CCB473000373B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EF2E81CCB473000373B01 /* AppDelegate.swift */; };
 		525EF2EB1CCB473000373B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EF2EA1CCB473000373B01 /* ViewController.swift */; };
 		525EF2EE1CCB473000373B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2EC1CCB473000373B01 /* Main.storyboard */; };
 		525EF2F01CCB473000373B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2EF1CCB473000373B01 /* Assets.xcassets */; };
 		525EF2F31CCB473000373B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2F11CCB473000373B01 /* LaunchScreen.storyboard */; };
+		73B6A91052FD0F3EDFFC2AE3 /* Pods_LazyTourist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B69E9F4084FA5CAE1AF39F /* Pods_LazyTourist.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CCEEFFCB9EE6F95E97E4433 /* Pods-LazyTourist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyTourist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist.debug.xcconfig"; sourceTree = "<group>"; };
 		5207D8C21CCE69B0007DF1E8 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
-		5207D8C41CCEB879007DF1E8 /* RegionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionProtocol.swift; sourceTree = "<group>"; };
-		5207D8C61CCEB985007DF1E8 /* RegionDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionDelegateProtocol.swift; sourceTree = "<group>"; };
 		525EF2E51CCB473000373B01 /* LazyTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525EF2E81CCB473000373B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525EF2EA1CCB473000373B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +26,8 @@
 		525EF2EF1CCB473000373B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525EF2F21CCB473000373B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525EF2F41CCB473000373B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B69E9F4084FA5CAE1AF39F /* Pods_LazyTourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyTourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA513B82311C39CDA1978B51 /* Pods-LazyTourist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyTourist.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B6A91052FD0F3EDFFC2AE3 /* Pods_LazyTourist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0110402B29BCCFBB4A425463 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEEFFCB9EE6F95E97E4433 /* Pods-LazyTourist.debug.xcconfig */,
+				CA513B82311C39CDA1978B51 /* Pods-LazyTourist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		525EF2DC1CCB473000373B01 = {
 			isa = PBXGroup;
 			children = (
 				525EF2E71CCB473000373B01 /* LazyTourist */,
 				525EF2E61CCB473000373B01 /* Products */,
 				9EB63688205162DE00B5D4A4 /* Frameworks */,
+				0110402B29BCCFBB4A425463 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,6 @@
 			children = (
 				525EF2E81CCB473000373B01 /* AppDelegate.swift */,
 				525EF2EA1CCB473000373B01 /* ViewController.swift */,
-				5207D8C41CCEB879007DF1E8 /* RegionProtocol.swift */,
-				5207D8C61CCEB985007DF1E8 /* RegionDelegateProtocol.swift */,
 				525EF2EC1CCB473000373B01 /* Main.storyboard */,
 				525EF2EF1CCB473000373B01 /* Assets.xcassets */,
 				525EF2F11CCB473000373B01 /* LaunchScreen.storyboard */,
@@ -77,6 +86,7 @@
 		9EB63688205162DE00B5D4A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4B69E9F4084FA5CAE1AF39F /* Pods_LazyTourist.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525EF2F71CCB473000373B01 /* Build configuration list for PBXNativeTarget "LazyTourist" */;
 			buildPhases = (
+				F42CC928C1F449E1001E54D6 /* [CP] Check Pods Manifest.lock */,
 				525EF2E11CCB473000373B01 /* Sources */,
 				525EF2E21CCB473000373B01 /* Frameworks */,
 				525EF2E31CCB473000373B01 /* Resources */,
+				C0F9AD469C76231D09A5C1A4 /* [CP] Embed Pods Frameworks */,
+				A1BF4913A79D3FEAD8503BB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,15 +171,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A1BF4913A79D3FEAD8503BB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F9AD469C76231D09A5C1A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42CC928C1F449E1001E54D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LazyTourist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		525EF2E11CCB473000373B01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5207D8C71CCEB985007DF1E8 /* RegionDelegateProtocol.swift in Sources */,
 				525EF2EB1CCB473000373B01 /* ViewController.swift in Sources */,
 				525EF2E91CCB473000373B01 /* AppDelegate.swift in Sources */,
-				5207D8C51CCEB879007DF1E8 /* RegionProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +361,7 @@
 		};
 		525EF2F81CCB473000373B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCEEFFCB9EE6F95E97E4433 /* Pods-LazyTourist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DKQ623VRJ4;
@@ -308,6 +376,7 @@
 		};
 		525EF2F91CCB473000373B01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA513B82311C39CDA1978B51 /* Pods-LazyTourist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DKQ623VRJ4;
