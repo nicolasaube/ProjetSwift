@@ -12,7 +12,7 @@ import GoogleMaps
 
 class ViewController: UIViewController {
 
-    
+    //Test git
 	let locationManager = CLLocationManager()
 	//var monitoredRegions: Dictionary<String, Date> = [:]
 
