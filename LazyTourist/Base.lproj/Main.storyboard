@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,15 +14,44 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LazyTourist" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="7mr-hB-gLG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-UE-939" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_me" translatesAutoresizingMaskIntoConstraints="NO" id="jgM-JP-Lco" userLabel="Pin">
+                                <rect key="frame" x="172" y="290" width="30" height="55"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF5-sJ-Zhn">
+                                <rect key="frame" x="0.0" y="646" width="375" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3YO-Ws-sGi" firstAttribute="trailing" secondItem="jgM-JP-Lco" secondAttribute="trailing" constant="173" id="241-Gi-as9"/>
+                            <constraint firstItem="3YO-Ws-sGi" firstAttribute="bottom" secondItem="NF5-sJ-Zhn" secondAttribute="bottom" id="5jD-Ln-uWR"/>
+                            <constraint firstItem="jgM-JP-Lco" firstAttribute="top" secondItem="3YO-Ws-sGi" secondAttribute="top" constant="270" id="LzC-Za-UVZ"/>
+                            <constraint firstItem="jgM-JP-Lco" firstAttribute="leading" secondItem="3YO-Ws-sGi" secondAttribute="leading" constant="172" id="QlU-GN-GFq"/>
+                            <constraint firstItem="3YO-Ws-sGi" firstAttribute="trailing" secondItem="NF5-sJ-Zhn" secondAttribute="trailing" id="cu6-3q-P69"/>
+                            <constraint firstItem="Mtg-UE-939" firstAttribute="top" secondItem="3YO-Ws-sGi" secondAttribute="top" id="oOD-4L-V68"/>
+                            <constraint firstItem="3YO-Ws-sGi" firstAttribute="trailing" secondItem="Mtg-UE-939" secondAttribute="trailing" id="sBw-CQ-S2a"/>
+                            <constraint firstItem="3YO-Ws-sGi" firstAttribute="bottom" secondItem="Mtg-UE-939" secondAttribute="bottom" id="tBd-MZ-YzA"/>
+                            <constraint firstItem="Mtg-UE-939" firstAttribute="leading" secondItem="3YO-Ws-sGi" secondAttribute="leading" id="xie-u0-O3w"/>
+                            <constraint firstItem="NF5-sJ-Zhn" firstAttribute="leading" secondItem="3YO-Ws-sGi" secondAttribute="leading" id="yHs-we-IgB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3YO-Ws-sGi"/>
                     </view>
+                    <connections>
+                        <outlet property="adressLabel" destination="NF5-sJ-Zhn" id="KKh-q0-Agx"/>
+                        <outlet property="mapView" destination="Mtg-UE-939" id="8Ii-vt-I99"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="8JJ-VX-49S"/>
@@ -29,4 +59,7 @@
             <point key="canvasLocation" x="184.80000000000001" y="371.96401799100454"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_me" width="30" height="55"/>
+    </resources>
 </document>

@@ -23,9 +23,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Regions needs to always be able to access your location.</string>
+	<string>App needs to always be able to access your location :)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Regions needs to always be able to access your location.</string>
+	<string>App needs to always be able to access your location :)</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

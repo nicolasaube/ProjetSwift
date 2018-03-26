@@ -9,4 +9,5 @@ target 'LazyTourist' do
   # Pods for LazyTourist
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'SwiftyJSON'
 end

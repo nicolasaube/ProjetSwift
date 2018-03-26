@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5207D8C31CCE69B0007DF1E8 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5207D8C21CCE69B0007DF1E8 /* America.gpx */; };
 		525EF2E91CCB473000373B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EF2E81CCB473000373B01 /* AppDelegate.swift */; };
 		525EF2EB1CCB473000373B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EF2EA1CCB473000373B01 /* ViewController.swift */; };
 		525EF2EE1CCB473000373B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2EC1CCB473000373B01 /* Main.storyboard */; };
 		525EF2F01CCB473000373B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2EF1CCB473000373B01 /* Assets.xcassets */; };
 		525EF2F31CCB473000373B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2F11CCB473000373B01 /* LaunchScreen.storyboard */; };
 		73B6A91052FD0F3EDFFC2AE3 /* Pods_LazyTourist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B69E9F4084FA5CAE1AF39F /* Pods_LazyTourist.framework */; };
+		9E73283920672B3800C03270 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73283820672B3700C03270 /* SwiftyJSON.swift */; };
+		9EA8976B2066F50E0008C6A4 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA897682066F50D0008C6A4 /* PlaceMarker.swift */; };
+		9EA8976C2066F50E0008C6A4 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA897692066F50E0008C6A4 /* GoogleDataProvider.swift */; };
+		9EA8976D2066F50E0008C6A4 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8976A2066F50E0008C6A4 /* GooglePlace.swift */; };
+		9EA8976F2066F5DA0008C6A4 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8976E2066F5DA0008C6A4 /* TypesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CCEEFFCB9EE6F95E97E4433 /* Pods-LazyTourist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyTourist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist.debug.xcconfig"; sourceTree = "<group>"; };
-		5207D8C21CCE69B0007DF1E8 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = America.gpx; sourceTree = "<group>"; };
 		525EF2E51CCB473000373B01 /* LazyTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525EF2E81CCB473000373B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525EF2EA1CCB473000373B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,12 @@
 		525EF2EF1CCB473000373B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525EF2F21CCB473000373B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525EF2F41CCB473000373B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E73283820672B3700C03270 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Pods/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		9E73283A2068811400C03270 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		9EA897682066F50D0008C6A4 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMarker.swift; path = "../../Feed_Me_Completed/Feed Me/Model/PlaceMarker.swift"; sourceTree = "<group>"; };
+		9EA897692066F50E0008C6A4 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		9EA8976A2066F50E0008C6A4 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		9EA8976E2066F5DA0008C6A4 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		B4B69E9F4084FA5CAE1AF39F /* Pods_LazyTourist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LazyTourist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA513B82311C39CDA1978B51 /* Pods-LazyTourist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LazyTourist.release.xcconfig"; path = "Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,14 +82,35 @@
 			isa = PBXGroup;
 			children = (
 				525EF2E81CCB473000373B01 /* AppDelegate.swift */,
-				525EF2EA1CCB473000373B01 /* ViewController.swift */,
+				9E73283820672B3700C03270 /* SwiftyJSON.swift */,
+				9E73283A2068811400C03270 /* Pacifico.ttf */,
+				9EA897702066F66C0008C6A4 /* Controller */,
+				9EA897672066F4DA0008C6A4 /* Model */,
 				525EF2EC1CCB473000373B01 /* Main.storyboard */,
 				525EF2EF1CCB473000373B01 /* Assets.xcassets */,
 				525EF2F11CCB473000373B01 /* LaunchScreen.storyboard */,
-				5207D8C21CCE69B0007DF1E8 /* America.gpx */,
 				525EF2F41CCB473000373B01 /* Info.plist */,
 			);
 			path = LazyTourist;
+			sourceTree = "<group>";
+		};
+		9EA897672066F4DA0008C6A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA897692066F50E0008C6A4 /* GoogleDataProvider.swift */,
+				9EA8976A2066F50E0008C6A4 /* GooglePlace.swift */,
+				9EA897682066F50D0008C6A4 /* PlaceMarker.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9EA897702066F66C0008C6A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				525EF2EA1CCB473000373B01 /* ViewController.swift */,
+				9EA8976E2066F5DA0008C6A4 /* TypesTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9EB63688205162DE00B5D4A4 /* Frameworks */ = {
@@ -122,7 +152,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Evgenii Trapeznikov";
+				ORGANIZATIONNAME = "Nico aka Babou le barbar";
 				TargetAttributes = {
 					525EF2E41CCB473000373B01 = {
 						CreatedOnToolsVersion = 7.3;
@@ -164,7 +194,6 @@
 			files = (
 				525EF2F31CCB473000373B01 /* LaunchScreen.storyboard in Resources */,
 				525EF2F01CCB473000373B01 /* Assets.xcassets in Resources */,
-				5207D8C31CCE69B0007DF1E8 /* America.gpx in Resources */,
 				525EF2EE1CCB473000373B01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,9 +227,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LazyTourist/Pods-LazyTourist-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,8 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA8976C2066F50E0008C6A4 /* GoogleDataProvider.swift in Sources */,
+				9EA8976D2066F50E0008C6A4 /* GooglePlace.swift in Sources */,
 				525EF2EB1CCB473000373B01 /* ViewController.swift in Sources */,
 				525EF2E91CCB473000373B01 /* AppDelegate.swift in Sources */,
+				9EA8976B2066F50E0008C6A4 /* PlaceMarker.swift in Sources */,
+				9E73283920672B3800C03270 /* SwiftyJSON.swift in Sources */,
+				9EA8976F2066F5DA0008C6A4 /* TypesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,12 +401,14 @@
 			baseConfigurationReference = 3CCEEFFCB9EE6F95E97E4433 /* Pods-LazyTourist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DKQ623VRJ4;
 				INFOPLIST_FILE = LazyTourist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecetech.LazyTourist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -379,12 +418,13 @@
 			baseConfigurationReference = CA513B82311C39CDA1978B51 /* Pods-LazyTourist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DKQ623VRJ4;
 				INFOPLIST_FILE = LazyTourist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecetech.LazyTourist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

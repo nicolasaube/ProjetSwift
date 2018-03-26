@@ -1,21 +1,24 @@
 //
 //  AppDelegate.swift
-//  GeoTargeting
+//  LazyTourist
 //
-//  Created by Eugene Trapeznikov on 4/23/16.
-//  Copyright © 2016 Evgenii Trapeznikov. All rights reserved.
+//  Created by Nicolas Aubé on 24/03/2018.
+//  Copyright © 2018 Nico aka Babou le barbar. All rights reserved.
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyDwzvn2iMC0Mw7d2vevVG8znXAi2Yseuxo")
+        GMSPlacesClient.provideAPIKey("AIzaSyDwzvn2iMC0Mw7d2vevVG8znXAi2Yseuxo")
 		return true
 	}
 
