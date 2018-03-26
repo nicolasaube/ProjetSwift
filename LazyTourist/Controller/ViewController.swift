@@ -20,8 +20,12 @@ class ViewController: UIViewController, GMSMapViewDelegate {
     private let dataProvider = GoogleDataProvider()
     private let searchRadius: Double = 1000
     private var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
-    //Test git
-
+    
+    //Rafraichir lieux
+    @IBAction func refreshPlaces(_ sender: Any) {
+        fetchNearbyPlaces(coordinate: mapView.camera.target)
+    }
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CvR-xE-VjI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-UE-939" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_me" translatesAutoresizingMaskIntoConstraints="NO" id="jgM-JP-Lco" userLabel="Pin">
-                                <rect key="frame" x="172" y="290" width="30" height="55"/>
+                                <rect key="frame" x="172" y="324" width="30" height="55"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF5-sJ-Zhn">
                                 <rect key="frame" x="0.0" y="646" width="375" height="21"/>
@@ -37,7 +37,7 @@
                         <constraints>
                             <constraint firstItem="3YO-Ws-sGi" firstAttribute="trailing" secondItem="jgM-JP-Lco" secondAttribute="trailing" constant="173" id="241-Gi-as9"/>
                             <constraint firstItem="3YO-Ws-sGi" firstAttribute="bottom" secondItem="NF5-sJ-Zhn" secondAttribute="bottom" id="5jD-Ln-uWR"/>
-                            <constraint firstItem="jgM-JP-Lco" firstAttribute="top" secondItem="3YO-Ws-sGi" secondAttribute="top" constant="270" id="LzC-Za-UVZ"/>
+                            <constraint firstItem="jgM-JP-Lco" firstAttribute="top" secondItem="3YO-Ws-sGi" secondAttribute="top" constant="260" id="LzC-Za-UVZ"/>
                             <constraint firstItem="jgM-JP-Lco" firstAttribute="leading" secondItem="3YO-Ws-sGi" secondAttribute="leading" constant="172" id="QlU-GN-GFq"/>
                             <constraint firstItem="3YO-Ws-sGi" firstAttribute="trailing" secondItem="NF5-sJ-Zhn" secondAttribute="trailing" id="cu6-3q-P69"/>
                             <constraint firstItem="Mtg-UE-939" firstAttribute="top" secondItem="3YO-Ws-sGi" secondAttribute="top" id="oOD-4L-V68"/>
@@ -48,6 +48,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3YO-Ws-sGi"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Hud-jX-jda">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="k0K-Jk-Chh">
+                            <connections>
+                                <action selector="refreshPlaces:" destination="BYZ-38-t0r" id="cfU-yZ-SKh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" image="filter" id="xj5-JZ-aph" userLabel="Filter">
+                            <connections>
+                                <segue destination="Cct-rb-fly" kind="popoverPresentation" popoverAnchorBarButtonItem="xj5-JZ-aph" id="BKx-8Q-0iL">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="adressLabel" destination="NF5-sJ-Zhn" id="KKh-q0-Agx"/>
                         <outlet property="mapView" destination="Mtg-UE-939" id="8Ii-vt-I99"/>
@@ -56,10 +70,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="8JJ-VX-49S"/>
             </objects>
-            <point key="canvasLocation" x="184.80000000000001" y="371.96401799100454"/>
+            <point key="canvasLocation" x="524" y="371.96401799100454"/>
+        </scene>
+        <!--Filters Controller-->
+        <scene sceneID="Njr-8O-wUO">
+            <objects>
+                <viewController id="Cct-rb-fly" customClass="FiltersController" customModule="LazyTourist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M3P-Ub-q7y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFb-UQ-9Xx">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a4W-yB-zrG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojx-VD-kL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="372"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="02f-3s-d8a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CvR-xE-VjI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ju7-y9-4wq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MqQ-gA-ehE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDo-kp-mbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289" y="372"/>
         </scene>
     </scenes>
     <resources>
+        <image name="filter" width="25" height="25"/>
         <image name="icon_me" width="30" height="55"/>
     </resources>
 </document>

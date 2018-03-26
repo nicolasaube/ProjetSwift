@@ -14,7 +14,8 @@
 		525EF2F31CCB473000373B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525EF2F11CCB473000373B01 /* LaunchScreen.storyboard */; };
 		73B6A91052FD0F3EDFFC2AE3 /* Pods_LazyTourist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B69E9F4084FA5CAE1AF39F /* Pods_LazyTourist.framework */; };
 		9E73283920672B3800C03270 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73283820672B3700C03270 /* SwiftyJSON.swift */; };
-		9EA8976B2066F50E0008C6A4 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA897682066F50D0008C6A4 /* PlaceMarker.swift */; };
+		9E7328402068E95C00C03270 /* FiltersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73283F2068E95C00C03270 /* FiltersController.swift */; };
+		9E7328422068EA4E00C03270 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7328412068EA4E00C03270 /* PlaceMarker.swift */; };
 		9EA8976C2066F50E0008C6A4 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA897692066F50E0008C6A4 /* GoogleDataProvider.swift */; };
 		9EA8976D2066F50E0008C6A4 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8976A2066F50E0008C6A4 /* GooglePlace.swift */; };
 		9EA8976F2066F5DA0008C6A4 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8976E2066F5DA0008C6A4 /* TypesTableViewController.swift */; };
@@ -31,7 +32,8 @@
 		525EF2F41CCB473000373B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E73283820672B3700C03270 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Pods/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 		9E73283A2068811400C03270 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
-		9EA897682066F50D0008C6A4 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMarker.swift; path = "../../Feed_Me_Completed/Feed Me/Model/PlaceMarker.swift"; sourceTree = "<group>"; };
+		9E73283F2068E95C00C03270 /* FiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersController.swift; sourceTree = "<group>"; };
+		9E7328412068EA4E00C03270 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceMarker.swift; path = LazyTourist/PlaceMarker.swift; sourceTree = SOURCE_ROOT; };
 		9EA897692066F50E0008C6A4 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		9EA8976A2066F50E0008C6A4 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		9EA8976E2066F5DA0008C6A4 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +101,6 @@
 			children = (
 				9EA897692066F50E0008C6A4 /* GoogleDataProvider.swift */,
 				9EA8976A2066F50E0008C6A4 /* GooglePlace.swift */,
-				9EA897682066F50D0008C6A4 /* PlaceMarker.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -107,8 +108,10 @@
 		9EA897702066F66C0008C6A4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9E73283F2068E95C00C03270 /* FiltersController.swift */,
 				525EF2EA1CCB473000373B01 /* ViewController.swift */,
 				9EA8976E2066F5DA0008C6A4 /* TypesTableViewController.swift */,
+				9E7328412068EA4E00C03270 /* PlaceMarker.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,10 +270,11 @@
 				9EA8976C2066F50E0008C6A4 /* GoogleDataProvider.swift in Sources */,
 				9EA8976D2066F50E0008C6A4 /* GooglePlace.swift in Sources */,
 				525EF2EB1CCB473000373B01 /* ViewController.swift in Sources */,
+				9E7328422068EA4E00C03270 /* PlaceMarker.swift in Sources */,
 				525EF2E91CCB473000373B01 /* AppDelegate.swift in Sources */,
-				9EA8976B2066F50E0008C6A4 /* PlaceMarker.swift in Sources */,
 				9E73283920672B3800C03270 /* SwiftyJSON.swift in Sources */,
 				9EA8976F2066F5DA0008C6A4 /* TypesTableViewController.swift in Sources */,
+				9E7328402068E95C00C03270 /* FiltersController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
