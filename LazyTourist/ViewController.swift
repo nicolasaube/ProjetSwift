@@ -11,7 +11,6 @@ import CoreLocation
 import GoogleMaps
 
 class ViewController: UIViewController {
-
     
 	let locationManager = CLLocationManager()
 	//var monitoredRegions: Dictionary<String, Date> = [:]
